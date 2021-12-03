@@ -349,7 +349,7 @@ i {
 #send i {
     display: unset;
     position: relative;
-    left: -10%;
+    left: -20%;
 }
 
 .contenido #send {
@@ -399,41 +399,17 @@ img {
     display: none;
 }
 
-header{
-    width: 100%;
-    background: #7c0044;
-}
-#checkbox{
-    display: none;
-}
-header label{
-    display: none;
-    justify-items: center;
-    padding: 7px;
-    width: 20px;
-    height: 20px;
-    border-right: solid 1px white;
-}
-.fad fa-bars{
-    width: 20px;
-    height: 20px;
-}
-header label:hover{
-    cursor: pointer;
-    background: rgba(0, 0, 0, 0.3);
-    transition: .6s;
-    border-radius: 20px;
-}
-
 @keyframes flotar {
     0% {
         transform: translatey(0px);
+ 
     }
     50% {
         transform: translatey(-20px);
     }
     100% {
         transform: translatey(0px);
+ 
     }
 }
 @keyframes flotar2 {
@@ -466,56 +442,25 @@ header label:hover{
     }
 
     nav{
-        position: absolute;
+        position: sticky;
         background: #7c0044;
-        visibility: hidden;
-        width: 50%;
-        height: auto;
+        width: 100%;
+        height: 50px;
         top: 0;
-        margin-left: -70%;
-        transition: all 0.7s;
     }
-    nav ul{
-        flex-direction: column;
-    }
-    li{
-        text-align:left ;
-    }
-    header label{
-        display: block;
-    }
-    #check:checked ~nav{
-        visibility: visible;
-    }
-
 }
 
 @media (max-width: 950px){
     .intro {
         display: none;
     }
-
     nav{
-        position: absolute;
+        position: sticky;
         background: #7c0044;
-        visibility: hidden;
-        width: 50%;
-        height: auto;
-        top: 0;
-        margin-left: -70%;
-        transition: all 0.7s;
-    }
-    nav ul{
-        flex-direction: column;
-    }
-    li{
-        text-align:left ;
-    }
-    header label{
-        display: block;
-    }
-    #check:checked ~nav{
         visibility: visible;
+        width: 100%;
+        height: 50px;
+        top: 0;
     }
     .card .contact{
         display: none;
@@ -564,28 +509,16 @@ header label:hover{
     .intro {
         display: none;
     }
-
     nav{
-        position: absolute;
+        position: relative;
         background: #7c0044;
-        visibility: hidden;
-        width: 50%;
-        height: auto;
-        top: 0;
-        margin-left: -70%;
-        transition: all 0.7s;
+        margin-bottom:  20px;
+        width: 100%;
+        height: 250px;
+        z-index: none;
     }
     nav ul{
         flex-direction: column;
-    }
-    li{
-        text-align:left ;
-    }
-    header label{
-        display: block;
-    }
-    #check:checked ~nav{
-        visibility: visible;
     }
 
     .TarjetaContenedor {
@@ -641,7 +574,7 @@ header label:hover{
     }
 }
 
-@media /*Alerta dimensiones no compatibles*/ (max-width: 400px){
+@media /*Alerta dimensiones no compatibles*/ (max-width: 380px){
     .General{
         display: none;
     }

@@ -7,19 +7,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="scrip" href="app.js">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href='https://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Goldman&family=Noto+Sans+Mono:wght@100&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@300&family=Teko:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Goldman&family=Noto+Sans+Mono:wght@100&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@300&family=Teko:wght@300&display=swap"
+        rel="stylesheet">
     <link rel="icon" href="images/GTR.png" type="image/x-icon">
     <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
     <title>Arduino GTR</title>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_61dtIJ9rmcvjBobYeYiv3");
+        })();
+    </script>
 </head>
 
 <body>
-    <p class="warning"><i class="fal fa-exclamation-triangle"></i>Las dimensiones de su dispositivo no es compatible con esta pagina web.</p>
+    <p class="warning"><i class="fal fa-exclamation-triangle"></i>Las dimensiones de su dispositivo no es compatible con
+        esta pagina web.</p>
     <div class="intro">
         <label class="inicio">Arduino GTR</label>
         <div class="centrar">
@@ -27,11 +39,6 @@
         </div>
         <div class="DownArrow"><a href="#Home"><i class="fal fa-chevron-double-down"></i></a></div>
     </div>
-
-    <header>
-        <input type="checkbox" id="checkbox">
-        <label clas="check"><i class="fad fa-bars"></i></label>
-    </header>
 
     <nav>
         <div>
@@ -44,20 +51,31 @@
             </ul>
         </div>
     </nav>
+
     <div class="General" id="Home">
         <div class="cuerpo">
             <div id="Producto">
                 <h1>Producto</h1>
                 <br>
-                <p>El proyecto "Arduino GTR" consiste en un robot de transporte, tanto objetos de pequeño como de mediano porte, con un sistema de control mediante Arduino UNO y Bluetooth. Construido en su mayoría de madera con refuerzos en metal, soportado
-                    por 3 ruedas. Dos de ellas cuentan con motores independientes para mayor dominio sobre la conducción del mismo.
+                <p>El proyecto "Arduino GTR" consiste en un robot de transporte, tanto objetos de pequeño como de
+                    mediano porte, con un sistema de control mediante Arduino UNO y Bluetooth. Construido en su mayoría
+                    de madera con refuerzos en metal, soportado
+                    por 3 ruedas. Dos de ellas cuentan con motores independientes para mayor dominio sobre la conducción
+                    del mismo.
                 </p><br>
-                <p class="mediaDelete">El objetivo principal del proyecto es transportar objetos de un lado a otro siguiendo la ubicación GPS del teléfono celular del usuario. Arduino se enlazará por Bluetooth al dispositivo móvil del consumidor, luego tomará la ubicación (Latitud
-                    y Longitud) del módulo GPS para poder realizar una comparación entre los datos del dispositivo móvil y los datos del dicho módulo, obtendrá un seguimiento en tiempo real y este llegará a su destino sin toparse con ningún tipo de obstáculo
-                    mediante un sistema de anticolisión. También contará con una alerta incluida en el robot que cumplirá la función de avisar al usuario que la señal de GPS se perdió.
+                <p class="mediaDelete">El objetivo principal del proyecto es transportar objetos de un lado a otro
+                    siguiendo la ubicación GPS del teléfono celular del usuario. Arduino se enlazará por Bluetooth al
+                    dispositivo móvil del consumidor, luego tomará la ubicación (Latitud
+                    y Longitud) del módulo GPS para poder realizar una comparación entre los datos del dispositivo móvil
+                    y los datos del dicho módulo, obtendrá un seguimiento en tiempo real y este llegará a su destino sin
+                    toparse con ningún tipo de obstáculo
+                    mediante un sistema de anticolisión. También contará con una alerta incluida en el robot que
+                    cumplirá la función de avisar al usuario que la señal de GPS se perdió.
                 </p>
                 <br>
-                <p class="mediaDelete">El objetivo secundario cuenta con una ampliación que permite al cliente brindarle al robot una ubicación de llegada (ya que la de partida siempre va a ser la ubicación en la que se encuentra actualmente).
+                <p class="mediaDelete">El objetivo secundario cuenta con una ampliación que permite al cliente brindarle
+                    al robot una ubicación de llegada (ya que la de partida siempre va a ser la ubicación en la que se
+                    encuentra actualmente).
                 </p>
             </div>
             <br>
@@ -75,7 +93,8 @@
                         <div class="description">
                             <h3>Tomás Elias Rivero</h3>
                             <h4>Estudiante</h4>
-                            <p>"Tengo 17 años, soy cursante de 5 año del colegio San José, de la especialidad de Informatica. Vivo en Rosario."</p>
+                            <p>"Tengo 17 años, soy cursante de 5 año del colegio San José, de la especialidad de
+                                Informatica. Vivo en Rosario."</p>
                         </div>
                         <div class="contact">
                             <a href="#">Contacto</a>
@@ -91,7 +110,8 @@
                         <div class="description">
                             <h3>Lucas Jair Zalazar</h3>
                             <h4>Estudiante</h4>
-                            <p>"Tengo 18 años, soy cursante de 5 año del colegio San José, de la especialidad de Informatica. Vivo en Granadero Baigorria."</p>
+                            <p>"Tengo 18 años, soy cursante de 5 año del colegio San José, de la especialidad de
+                                Informatica. Vivo en Granadero Baigorria."</p>
                         </div>
                         <div class="contact">
                             <a href="#">Contacto</a>
@@ -103,8 +123,11 @@
             <div id="Materia">
                 <h1>Asignatura</h1>
                 <br>
-                <p> El taller de mantenimiento de software es un area donde se transporta, al estudiante, a una simulacion de trabajo real. Busca generar un trabajo en equipo, entre los dos estudiante, y que ellos puedan resolver problemas de manera independiente;
-                    con diferentes herramientas y consejos que los preparan para el futuro. La institucion dispone de personal altamente capacitado con amplio saber en diferentes materias.
+                <p> El taller de mantenimiento de software es un area donde se transporta, al estudiante, a una
+                    simulacion de trabajo real. Busca generar un trabajo en equipo, entre los dos estudiante, y que
+                    ellos puedan resolver problemas de manera independiente;
+                    con diferentes herramientas y consejos que los preparan para el futuro. La institucion dispone de
+                    personal altamente capacitado con amplio saber en diferentes materias.
                 </p>
             </div>
 
@@ -113,18 +136,38 @@
             <div id="Establecimiento">
                 <h1>Establecimiento</h1><br>
                 <div class="ContenedorEstablecimiento">
-                    <p class="ParrafoHistoria mediaDelete">  En 1890, Rosario era una ciudad de 70.000 habitantes en la cual predominaban las sectas masónicas y las iglesias protestantes. Sólo contaba con una parroquia católica y tres o cuatro sacerdotes. La población estaba desprovista
-                        de escuelas católicas y de la transmisión de las enseñanzas evangélicas. Por esta ausencia de enseñanza católica y por ser Rosario una ciudad que quedaba camino a la Patagonia es que los salesianos decidieron venir a nuestra
-                        ciudad, posibilitaron esta fundación los grupos misioneros enviados años tras año por San Juan Bosco y por su inmediato sucesor el Beato Miguel Rúa después; a la par de las vocaciones nacidas acá.
-                        <br>  En el año 1895 y 1897 la obra se trasladó a lo que es actualmente el colegio San José en la manzana formada por las calles Pte. Roca y España, Salta y Jujuy.
-                        <br>  Desde entonces, la Casa Salesiana “San José” sigue intentando realizar el objetivo propuesto por Don Bosco: la formación de buenos cristianos y honestos ciudadanos, comprometidos en la construcción de un mundo mejor.
+                    <p class="ParrafoHistoria mediaDelete">  En 1890, Rosario era una ciudad de 70.000 habitantes en la
+                        cual predominaban las sectas masónicas y las iglesias protestantes. Sólo contaba con una
+                        parroquia católica y tres o cuatro sacerdotes. La población estaba desprovista
+                        de escuelas católicas y de la transmisión de las enseñanzas evangélicas. Por esta ausencia de
+                        enseñanza católica y por ser Rosario una ciudad que quedaba camino a la Patagonia es que los
+                        salesianos decidieron venir a nuestra
+                        ciudad, posibilitaron esta fundación los grupos misioneros enviados años tras año por San Juan
+                        Bosco y por su inmediato sucesor el Beato Miguel Rúa después; a la par de las vocaciones nacidas
+                        acá.
+                        <br>  En el año 1895 y 1897 la obra se trasladó a lo que es actualmente el colegio San José en
+                        la manzana formada por las calles Pte. Roca y España, Salta y Jujuy.
+                        <br>  Desde entonces, la Casa Salesiana “San José” sigue intentando realizar el objetivo
+                        propuesto por Don Bosco: la formación de buenos cristianos y honestos ciudadanos, comprometidos
+                        en la construcción de un mundo mejor.
                     </p>
 
-                    <p class="ParrafoHistoria normalDelete">  En 1890, Rosario era una ciudad de 70.000 habitantes en la cual predominaban las sectas masónicas y las iglesias protestantes. Sólo contaba con una parroquia católica y tres o cuatro sacerdotes. La población estaba desprovista
-                        de escuelas católicas y de la transmisión de las enseñanzas evangélicas. Por esta ausencia de enseñanza católica y por ser Rosario una ciudad que quedaba camino a la Patagonia es que los salesianos decidieron venir a nuestra
-                        ciudad, posibilitaron esta fundación los grupos misioneros enviados años tras año por San Juan Bosco y por su inmediato sucesor el Beato Miguel Rúa después; a la par de las vocaciones nacidas acá.
-                        </p><p class="ParrafoHistoria normalDelete">En el año 1895 y 1897 la obra se trasladó a lo que es actualmente el colegio San José en la manzana formada por las calles Pte. Roca y España, Salta y Jujuy.
-                        <br><br>  Desde entonces, la Casa Salesiana “San José” sigue intentando realizar el objetivo propuesto por Don Bosco: la formación de buenos cristianos y honestos ciudadanos, comprometidos en la construcción de un mundo mejor.
+                    <p class="ParrafoHistoria normalDelete">  En 1890, Rosario era una ciudad de 70.000 habitantes en la
+                        cual predominaban las sectas masónicas y las iglesias protestantes. Sólo contaba con una
+                        parroquia católica y tres o cuatro sacerdotes. La población estaba desprovista
+                        de escuelas católicas y de la transmisión de las enseñanzas evangélicas. Por esta ausencia de
+                        enseñanza católica y por ser Rosario una ciudad que quedaba camino a la Patagonia es que los
+                        salesianos decidieron venir a nuestra
+                        ciudad, posibilitaron esta fundación los grupos misioneros enviados años tras año por San Juan
+                        Bosco y por su inmediato sucesor el Beato Miguel Rúa después; a la par de las vocaciones nacidas
+                        acá.
+                    </p>
+                    <p class="ParrafoHistoria normalDelete">En el año 1895 y 1897 la obra se trasladó a lo que es
+                        actualmente el colegio San José en la manzana formada por las calles Pte. Roca y España, Salta y
+                        Jujuy.
+                        <br><br>  Desde entonces, la Casa Salesiana “San José” sigue intentando realizar el objetivo
+                        propuesto por Don Bosco: la formación de buenos cristianos y honestos ciudadanos, comprometidos
+                        en la construcción de un mundo mejor.
                     </p>
                     <img src="images/SanJose.JPG" width="4032" height="3024" class="ImagenEscuela">
                 </div>
@@ -134,13 +177,18 @@
             <br>
 
             <div id="contacto">
-                <form class="contenido form"  action="javascript:sendMail();">
+                <form class="contenido form">
                     <h1>Contacto</h1><br>
-                    <i class="fas fa-signature"><input type="text" class="inputs" id="nombre" placeholder="Nombre y Apellido"></i><br>
-                    <i class="fas fa-at "><input type="email" class="inputs" placeholder="Mail" id="correo" required></i><br>
-                    <i class="fas fa-quote-right"><input type="text" class="inputs" id="SUBJECT" placeholder="Asunto" required></i><br>
-                    <i class="far fa-envelope"> <textarea class="inputs" id="mensaje" placeholder="Mensaje"></textarea></i><br>
-                    <button type="submit" id="send"><i class="far fa-paper-plane"></i></i>Enviar</button>
+                    <i class="fas fa-signature"><input type="text" class="inputs" id="a"
+                            placeholder="Nombre y Apellido"></i><br>
+                    <i class="fas fa-at "><input type="email" class="inputs" placeholder="Mail" id="correo"
+                            required></i><br>
+                    <i class="fas fa-quote-right"><input type="text" class="inputs" id="SUBJECT" placeholder="Asunto"
+                            required></i><br>
+                    <i class="far fa-envelope"> <textarea class="inputs" id="mensaje"
+                            placeholder="Mensaje"></textarea></i><br>
+                    <button type="submit" id="send" onclick="sendmail();"><i
+                            class="far fa-paper-plane"></i></i>Enviar</button>
                 </form>
             </div>
         </div>
@@ -148,8 +196,8 @@
 
 </body>
 
-<script src="app.js"></script>
+<script src="main.js"></script>
 <script src="https://kit.fontawesome.com/94de2b8e31.js" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </html>
