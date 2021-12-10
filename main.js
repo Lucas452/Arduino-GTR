@@ -3,7 +3,7 @@
 })();
 
 function sendmail() {
-    let fullName = document.getElementById("a").value;
+    let fullName = document.getElementById("a").value + document.getElementById("b").value; 
     let userEmail = document.getElementById("correo").value;
     let userAsunto = document.getElementById("SUBJECT").value;
     let userMessage = document.getElementById("mensaje").value;
