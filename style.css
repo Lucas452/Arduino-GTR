@@ -696,6 +696,9 @@ img {
 }
 
 @media (max-width: 1080px) {
+    *{
+        font-size: 99% !important;
+    }
     .intro {
         display: none;
     }
