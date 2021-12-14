@@ -17,3 +17,10 @@ function sendmail() {
 
     emailjs.send('service_6c66i8r', 'template_9cgzsbr', contactParams).then(function (res) { })
 }
+
+
+$(".hover").mouseleave(
+    function () {
+        $(this).removeClass("hover");
+    }
+);
