@@ -18,41 +18,53 @@
         rel="stylesheet">
     <link rel="icon" href="images/GTR.png" type="image/x-icon">
     <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-    <title>Arduino GTR</title>
-
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script type="text/javascript">
         (function () {
             emailjs.init("user_61dtIJ9rmcvjBobYeYiv3");
         })();
     </script>
+
+    <title>Arduino GTR</title>
+
 </head>
 
 <body>
     <p class="warning"><i class="fal fa-exclamation-triangle"></i>Las dimensiones de su dispositivo no es compatible con
         esta pagina web.</p>
-    <div class="intro">
+    <div class="intro" id="intro">
         <label class="inicio">Arduino GTR</label>
         <div class="centrar">
             <b class="homeA"></b>
         </div>
-        <div class="DownArrow"><a href="#Home"><i class="fal fa-chevron-double-down"></i></a></div>
+        <div class="DownArrow"><a href="#Home">Desliza hacia abajo!<i class="fal fa-chevron-double-down"></i></a></div>
     </div>
 
     <nav>
         <div>
             <ul>
-                <li><a href="#Producto">Producto</a></li>
-                <li><a href="#Creadores">Creadores</a></li>
-                <li><a href="#Materia">Asignatura</a></li>
-                <li><a href="#Establecimiento">Establecimiento</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#intro" class="intro-button"><i class="fal fa-home-lg-alt"></i></a></li>
+                <li><a href="#Producto" class="a-nav">Producto</a></li>
+                <li><a href="#componentes" class="a-nav">Componentes</a></li>
+                <li><a href="#Creadores" class="a-nav">Creadores</a></li>
+                <li><a href="#Materia" class="a-nav">Asignatura</a></li>
+                <li><a href="#Establecimiento" class="a-nav">Establecimiento</a></li>
+                <li><a href="#contacto" class="a-nav">Contacto</a></li>
+                <li><a href="#download" class="intro-button"><i class="fad fa-download"></i></a></li>
             </ul>
         </div>
     </nav>
 
     <div class="General" id="Home">
+
+
         <div class="cuerpo">
+
+
+<!--======================FORMULARIO DE CONTACTO======================-->
             <div id="Producto">
                 <h1>Producto</h1>
                 <br>
@@ -77,7 +89,100 @@
                     encuentra actualmente).
                 </p>
             </div>
+
+
+
             <br>
+
+
+<!--======================GRILLA DE COMPONENTES======================-->
+            <div id="componentes">
+                <h1>Componentes</h1>
+                <br>
+                <div class="images-content">
+                    <figure class="snip1273">
+                        <img src="images/motor.png" alt="sample72"/>
+                        <figcaption>
+                            <h3>Motor DC - 12v</h3>
+                            <p>Pequeño y barato, pero lo suficientemente potente como para ser utilizado en muchas aplicaciones.</p>
+                            <i class="fal fa-shopping-cart"><a href="https://articulo.mercadolibre.com.ar/MLA-905481656-motor-895-de-potencia-12v24v-maquinas-herramientas-itytarg-_JM#position=36&search_layout=stack&type=item&tracking_id=1a9e4105-859e-4734-ac9b-630bc76133a4" target="_blank">Comprar</a></i>
+                        </figcaption>
+                    </figure>
+
+
+                    <figure class="snip1273">
+                        <img src="images/sensor.png" alt="sample21"/>
+                        <figcaption>
+                            <h3>Sensor ultrasonico - hc-sr04</h3>
+                            <p>Sensor de distancia de bajo costo, su uso es muy frecuente en la robótica, utiliza transductores de ultrasonido para detectar objetos.</p>
+                            <i class="fal fa-shopping-cart"><a href="https://articulo.mercadolibre.com.ar/MLA-665553469-hc-sr04-sensor-de-distancia-ultrasonico-para-arduino-_JM#position=1&search_layout=grid&type=item&tracking_id=4a39c4fe-128b-480d-ba69-50c3def12c17" target="_blank">Comprar</a></i>
+                        </figcaption>
+                    </figure>
+
+
+                <figure class="snip1273">
+                    <img src="images/driver.png" alt="sample86"/>
+                    <figcaption>
+                        <h3>Doble puente H - L298N</h3>
+                        <p>Modulo más utilizado para manejar motores DC de hasta 2 amperios.</p>
+                        <i class="fal fa-shopping-cart"><a href="https://articulo.mercadolibre.com.ar/MLA-846633655-doble-puente-h-driver-l298n-arduino-motor-arm-avr-educabot-_JM#position=1&search_layout=stack&type=item&tracking_id=405b9d6f-223a-4c51-8f2e-75c82f0e2cef" target="_blank">Comprar</a></i>
+                    </figcaption>
+                </figure>
+                <figure class="snip1273">
+                    <img src="images/blue.png" alt="sample72"/>
+                    <figcaption>
+                        <h3>Bluetooth HC-05</h3>
+                        <p>Permite conectar proyectos con Arduino a un smartphone, celular o PC de forma inalámbrica (Bluetooth), con la facilidad de operación de un puerto serial.</p>
+                        <i class="fal fa-shopping-cart"><a href="https://articulo.mercadolibre.com.ar/MLA-705877889-modulo-bluetooth-hc05-maestro-esclavo-uart-arduino-nubbeo-_JM#position=1&search_layout=grid&type=item&tracking_id=1fa2c727-3415-4d46-9aa9-f6d3ef822fc1" target="_blank">Comprar</a></i>
+                    </figcaption>
+                </figure>
+
+
+                    <figure class="snip1273">
+                        <img src="images/bruj.png" alt="sample21"/>
+                        <figcaption>
+                            <h3>MAGNETOMETRO 3 ejes - HMC883</h3>
+                            <p>Sensor magnetómetro de 3 ejes, se encuentra integrado en módulos como la GY-273 que hace que podamos detectar y leer el campo magnético terrestre y así calcular la orientación con respecto al norte magnético de la tierra.</p>
+                            <i class="fal fa-shopping-cart"><a href="https://articulo.mercadolibre.com.ar/MLA-660690765-magnetometro-hmc5883l-compas-3-ejes-brujula-arduino-gy273-_JM#position=1&search_layout=stack&type=item&tracking_id=ce54d1b7-ee0d-4608-99a2-fbcd91d26dcf" target="_blank">Comprar</a></i>
+                        </figcaption>
+                    </figure>
+
+
+                    <figure class="snip1273">
+                        <img src="images/gps.png" alt="sample86"/>
+                        <figcaption>
+                            <h3>Gps Ublox - Neo6</h3>
+                            <p>Módulo receptor que puede ser utilizado en todo aquello que requiera un aplicación de geolocalización.</p>
+                            <i class="fal fa-shopping-cart"><a href="https://articulo.mercadolibre.com.ar/MLA-748647749-modulo-gps-ublox-neo6-con-antena-y-bateria-arduino-pic-neo-6-_JM#position=1&search_layout=stack&type=item&tracking_id=b6d9e647-eee0-4ca5-b574-8bd2d1e32af8" target="_blank">Comprar</a></i>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="snip1273">
+                        <img src="images/bank.png" alt="sample86"/>
+                        <figcaption>
+                            <h3>Power Bank - t18</h3>
+                            <p>Batería recargable de material de litio (ion o polímero), con puertos Universal Serial Bus (USB) para alimentar dispositivos eléctricos o electronicos.</p>
+                            <i class="fal fa-shopping-cart"><a href="https://articulo.mercadolibre.com.ar/MLA-653668279-power-bank-celular-smartphone-10000mah-indicador-bateria-_JM?searchVariation=45540115635#searchVariation=45540115635&position=1&search_layout=stack&type=item&tracking_id=1422ea89-b51f-4768-bd7f-23a08f82a8a4" target="_blank">Comprar</a></i>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="snip1273">
+                        <img src="images/ard.png" alt="sample86"/>
+                        <figcaption>
+                            <h3>Arduino - uno</h3>
+                            <p>Placa de microcontrolador de código abierto basado en el microchip ATmega328P y desarrollado por Arduino.cc.​​</p>
+                            <i class="fal fa-shopping-cart"><a href="https://articulo.mercadolibre.com.ar/MLA-616456041-arduino-uno-r3-compatible-atmel-atmega328-ch340g-domotica-_JM#position=3&search_layout=grid&type=item&tracking_id=2f4eb427-ef8d-4b56-8582-dbec5d64b310" target="_blank">Comprar</a></i>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+
+
+
+            <br>
+
+
+<!--======================TARJETAS DE CREADORES======================-->
             <div class="creador">
                 <h1 id="Creadores">Creadores</h1>
                 <br>
@@ -118,7 +223,13 @@
                     </div>
                 </div>
             </div>
+
+
+
             <br>
+
+
+<!--======================COMENTARIO SOBRE LA MATERIA======================-->
             <div id="Materia">
                 <h1>Asignatura</h1>
                 <br>
@@ -130,8 +241,12 @@
                 </p>
             </div>
 
+
+
             <br>
 
+
+<!--======================HISTORIA DEL ESTABLECIMIENTO======================-->
             <div id="Establecimiento">
                 <h1>Establecimiento</h1><br>
                 <div class="ContenedorEstablecimiento">
@@ -173,11 +288,17 @@
 
             </div>
 
+
+
             <br>
 
-           <div id="contacto">
+
+<!--======================FORMULARIO DE CONTACTO======================-->
+            <div id="contacto">
                 <form class="contenido form">
                     <h1>Contacto</h1><br>
+
+
                     <i class="fas fa-signature"><input type="text" class="inputs" id="a"
                             placeholder="Nombre"></i><br>
                     <i class="fas fa-signature"><input type="text" class="inputs" id="b"
@@ -190,15 +311,82 @@
                             placeholder="Mensaje"></textarea></i><br>
                     <button type="submit" id="send" onclick="sendmail();"><i
                             class="far fa-paper-plane"></i></i>Enviar</button>
+
+                            
+                            <div class="TarjetaContenedor-contact">
+                                <div class="card-contact">
+                                    <div class="head">
+                                        <div class="img">
+                                            <img src="images/tomi.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="description">
+                                        <h3>Tomás Elias Rivero</h3>
+                                        <h4>Tel.: (341) 5123456</h4>
+                                        <h4>Mail: tomasrivero@gtr.com</h4>
+                                    </div>
+                                </div>
+            
+                                <div class="card-contact">
+                                    <div class="head">
+                                        <div class="img">
+                                            <img src="images/tukih.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="description">
+                                        <h3>Lucas Jair Zalazar</h3>
+                                        <h4>Tel.: (341) 5123456</h4>
+                                        <h4>Mail: lucaszalazar@gtr.com</h4>
+                                    </div>
+                                </div>
+                            </div>
                 </form> 
+
             </div>
-        </div>
-    </div>
+
+
+            <br>
+
+
+<!--======================TABLA DE ARCHIVOS PARA DESCARGAR======================-->
+            <div class="archivos" id="download">
+                <h1>¿Te gustaría descargar alguno o todos nuestros archivos?</h1>
+                <h3>Acá te los dejamos.</h3>
+                <div class="cuadro">
+                    <div class="archivo">
+                        <div class="arch">Plan de proyecto</div>
+                        <div class="arch">Registro de tiempos</div>
+                        <div class="arch">Modelo 3D</div>
+                        <div class="arch">Todo</div>
+                    </div>
+                    <div class="tipo-archivo">
+                        <div>.docx</div>
+                        <div>.xlsx</div>
+                        <div>stl</div>
+                        <div>.rar</div>
+                    </div>
+                    <div class="download">
+                        <a href="1.docx"><i class="fad fa-download"></i></a>
+                        <a href="2.xlsx"><i class="fad fa-download"></i></a>
+                        <a href="gtr.stl"><i class="fad fa-download"></i></a>
+                        <a href="GTR.rar"><i class="fad fa-download"></i></a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <br>
+
+
+
+        </div cuerpo>
+
+    </div general>
 
 </body>
 
 <script src="main.js"></script>
 <script src="https://kit.fontawesome.com/94de2b8e31.js" crossorigin="anonymous"></script>
-<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </html>
